@@ -4,6 +4,8 @@ import 'package:flutter_login/authentication/bloc/authentication_bloc.dart';
 import 'package:user_repository/user_repository.dart';
 import 'package:flutter/material.dart';
 
+import 'home/home.dart';
+import 'login/view/view.dart';
 import 'splash/splash.dart';
 
 class App extends StatefulWidget {
@@ -73,6 +75,7 @@ class _AppViewState extends State<AppView> {
                     LoginPage.route(), (route) => false);
                 break;
               default:
+                break;
             }
           },
           child: child,

@@ -37,7 +37,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     emit(
       state.copyWith(
         password: password,
-        isValid: Formz.validate([password, state.password]),
+        isValid: Formz.validate([password, state.username]),
       ),
     );
   }
